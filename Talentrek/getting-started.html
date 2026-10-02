@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Getting Started — Talentrek</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="font-display bg-background-light text-text-light">
+<header class="border-b p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a href="index.html" class="flex items-center gap-3"><svg class="h-8 w-8 text-primary" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M6 24a18 18 0 1 0 36 0 18 18 0 0 0-36 0z"/></svg><span class="font-bold">Talentrek</span></a>
+    <a href="login.html" class="px-3 py-2 rounded-md border">Login</a>
+  </div>
+</header>
+
+<main class="container mx-auto p-6">
+  <h1 class="text-3xl font-bold mb-4">Getting Started</h1>
+  <p class="text-muted-light mb-6">This quick guide helps you run and edit the Talentrek frontend locally.</p>
+
+  <section class="mb-6">
+    <h2 class="font-semibold">How to open</h2>
+    <ol class="list-decimal ml-6 mt-2 space-y-2">
+      <li>Double-click <code>index.html</code> to open in your browser (works offline).</li>
+      <li>Or run the dev server (recommended): <pre>npm install
+npm start</pre></li>
+    </ol>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="font-semibold">Folder structure</h2>
+    <pre class="bg-card-light p-4 rounded">/assets
+  /css - styles (style.css)
+  /js  - scripts (main.js, theme.js)
+/index.html
+/getting-started.html
+/post-project.html
+/project-details.html
+/login.html
+/dashboard.html
+</pre>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="font-semibold">Notes</h2>
+    <ul class="list-disc ml-6 mt-2 space-y-2">
+      <li>Theme persists between pages using localStorage.</li>
+      <li>All main buttons redirect to the proper pages (editable in <code>assets/js/main.js</code>).</li>
+      <li>Replace images in <code>assets/images</code> with your photos. (I left placeholder images.)</li>
+    </ul>
+  </section>
+
+  <section class="mb-6">
+    <h2 class="font-semibold">Credits &amp; Team</h2>
+    <div class="bg-card-light p-4 rounded">
+      <p><strong>ARYAN YADAV</strong> — Founder</p>
+      <p><strong>DIVYESH SHEKHAWAT</strong> — Co-Founder &amp; Frontend Dev</p>
+      <p><strong>BISHNU GHOSH</strong> — Backend Dev</p>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t p-4 text-sm">
+  <div class="container mx-auto">Made with ♥ — Talentrek</div>
+</footer>
+</body>
+</html>

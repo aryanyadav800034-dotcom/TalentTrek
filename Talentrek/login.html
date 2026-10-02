@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login — Talentrek</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/></head><body class="font-display bg-background-light text-text-light">
+<header class="border-b p-4"><div class="container mx-auto"><a href="index.html" class="font-bold">Talentrek</a></div></header>
+<main class="container mx-auto p-6 max-w-md">
+  <h1 class="text-2xl font-bold mb-4">Sign in</h1>
+  <form id="login-form" class="space-y-4 bg-card-light p-6 rounded shadow-soft">
+    <input name="email" type="email" required placeholder="Email" class="w-full p-3 border rounded"/>
+    <div class="relative"><input name="password" id="pw" type="password" required placeholder="Password" class="w-full p-3 border rounded"/><button type="button" id="pw-toggle" class="absolute right-2 top-2 text-sm">Show</button></div>
+    <div class="flex justify-between items-center"><a href="getting-started.html" class="text-sm">Forgot?</a></div>
+    <button class="w-full bg-primary text-white p-3 rounded" type="submit">Log in</button>
+  </form>
+</main>
+<script src="assets/js/main.js"></script>
+</body></html>

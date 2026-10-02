@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Talentrek — Home</title>
+<link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body class="font-display bg-background-light text-text-light">
+<!-- Header (shared simple header with theme toggle + Getting Started link) -->
+<header class="sticky top-0 bg-background-light/90 border-b border-border-light">
+  <nav class="container mx-auto flex items-center justify-between p-4">
+    <a href="index.html" class="flex items-center gap-3">
+      <svg class="h-8 w-8 text-primary" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" d="M6 24a18 18 0 1 0 36 0 18 18 0 0 0-36 0z"/>
+      </svg>
+      <span class="font-bold text-xl">Talentrek</span>
+    </a>
+    <div class="flex items-center gap-4">
+      <a class="text-sm hidden md:inline-block" href="getting-started.html">Getting Started</a>
+      <button id="theme-toggle" class="px-3 py-2 rounded-md border">Toggle theme</button>
+      <a href="login.html" class="px-4 py-2 rounded-md bg-primary text-white">Log in</a>
+    </div>
+  </nav>
+</header>
+
+<main class="container mx-auto p-6">
+  <section class="grid lg:grid-cols-2 gap-8 items-center py-16">
+    <div>
+      <h1 class="text-4xl font-extrabold mb-4">Post a project, find the perfect student.</h1>
+      <p class="text-lg text-muted-light mb-6">Connect with talented students for short-term projects. Gain fresh perspectives and support your team's goals.</p>
+      <div class="flex gap-4">
+        <a href="post-project.html" class="inline-block bg-primary text-white px-6 py-3 rounded-lg">Post a Project</a>
+        <a href="startups.html" class="inline-block border px-6 py-3 rounded-lg">For Startups</a>
+      </div>
+    </div>
+    <div class="rounded-xl overflow-hidden bg-cover bg-center h-72" style="background-image: url('assets/images/hero.png')"></div>
+  </section>
+
+  <section class="py-12">
+    <h2 class="text-2xl font-bold mb-4">Project Examples</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article class="card p-6 rounded-lg bg-card-light shadow-soft">
+        <p class="text-sm text-primary mb-1">Marketing</p>
+        <h3 class="font-bold text-lg">Social Media Campaign</h3>
+        <p class="text-sm text-muted-light mt-2">Duration: 2 weeks • Rewards: $200</p>
+        <a href="project-details.html" class="mt-4 inline-block w-full text-center py-2 bg-primary/10 text-primary rounded-lg">View Project</a>
+      </article>
+      <article class="card p-6 rounded-lg bg-card-light shadow-soft">
+        <p class="text-sm text-primary mb-1">Design</p>
+        <h3 class="font-bold text-lg">Logo Design</h3>
+        <p class="text-sm text-muted-light mt-2">Duration: 1 week • Rewards: $150</p>
+        <a href="project-details.html" class="mt-4 inline-block w-full text-center py-2 bg-primary/10 text-primary rounded-lg">View Project</a>
+      </article>
+      <article class="card p-6 rounded-lg bg-card-light shadow-soft">
+        <p class="text-sm text-primary mb-1">Technology</p>
+        <h3 class="font-bold text-lg">Website Development</h3>
+        <p class="text-sm text-muted-light mt-2">Duration: 3 weeks • Rewards: $300</p>
+        <a href="project-details.html" class="mt-4 inline-block w-full text-center py-2 bg-primary/10 text-primary rounded-lg">View Project</a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="border-t border-border-light mt-12">
+  <div class="container mx-auto p-6 flex justify-between items-center">
+    <p class="text-sm text-muted-light">© 2024 Talentrek</p>
+    <div class="flex gap-4">
+      <a href="getting-started.html" class="text-sm">Getting Started</a>
+      <a href="login.html" class="text-sm">Login</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
